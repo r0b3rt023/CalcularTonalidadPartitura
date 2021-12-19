@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="50dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginLeft="46dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="43dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerNotaReposo"
+        app:layout_constraintEnd_toStartOf="@+id/textoOpcional"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/labelArmadura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginBottom="6dp"
+        android:text="Armadura"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerArmadura"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinnerArmadura"
+        android:layout_width="260dp"
+        android:layout_height="45dp"
+        android:background="@drawable/spinner_border"
+        android:theme="@android:style/Theme.Holo.Light.DarkActionBar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.077" />
+
+    <Spinner
+        android:id="@+id/spinnerPrimeraNota"
+        android:layout_width="135dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/spinner_border"
+        android:theme="@android:style/Theme.Holo.Light.DarkActionBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerArmadura" />
+
+    <TextView
+        android:id="@+id/labelPrimeraNota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="6dp"
+        android:text="Primera Nota"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerPrimeraNota"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinnerUltimaNota"
+        android:layout_width="135dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginRight="45dp"
+        android:background="@drawable/spinner_border"
+        android:theme="@android:style/Theme.Holo.Light.DarkActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerArmadura" />
+
+    <TextView
+        android:id="@+id/labelUltimaNota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="225dp"
+        android:layout_marginLeft="225dp"
+        android:layout_marginBottom="6dp"
+        android:text="Ultima Nota"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerUltimaNota"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/botonCalcular"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="36dp"
+        android:text="Calcular"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:background="@drawable/boton_calcular_border"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider4" />
+
+    <TextView
+        android:id="@+id/textoTonalidad"
+        android:layout_width="311dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="120dp"
+        android:gravity="center"
+        android:text="@string/textoPredeterminadoTonalidad"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinnerNotaReposo"
+        android:layout_width="260dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/spinner_border"
+        android:theme="@android:style/Theme.Holo.Light.DarkActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.532"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerUltimaNota" />
+
+    <TextView
+        android:id="@+id/labelUltimaNota2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginBottom="6dp"
+        android:text="Nota de Reposo"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerNotaReposo"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textoOpcional"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="35dp"
+        android:text="(Opcional)"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerNotaReposo"
+        app:layout_constraintEnd_toStartOf="@+id/divider"
+        app:layout_constraintStart_toEndOf="@+id/divider3" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="218dp"
+        android:layout_height="1dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginRight="46dp"
+        android:layout_marginBottom="43dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerNotaReposo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textoOpcional" />
+
+    <View
+        android:id="@+id/divider4"
+        android:layout_width="284dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="35dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerNotaReposo" />
+
+    <TextView
+        android:id="@+id/textoAuxiliar"
+        android:layout_width="309dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="64dp"
+        android:gravity="center"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
